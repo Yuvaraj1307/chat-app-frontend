@@ -1,0 +1,9 @@
+.chatList {
+    flex: 1;
+    height: calc(100% - 90px);
+
+    .chatItems {
+        overflow-y: auto;
+        height: calc(100% - 80px);
+    }
+}
