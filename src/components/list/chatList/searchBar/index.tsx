@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { TSeachBarComponent } from '@types';
 
 import './style.css';
 
