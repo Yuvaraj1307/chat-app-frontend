@@ -10,9 +10,9 @@ import './style.css';
 const Chat: FC = () => {
   const [openEmoji, setOpenEmoji] = useState(false);
   const [text, setText] = useState('');
-  
+
   const {
-    VIDEO_CALL, AUDIO_CALL, DETAILS, IMAGE_SHARING, 
+    VIDEO_CALL, AUDIO_CALL, DETAILS, IMAGE_SHARING,
   } = import.meta.env;
 
   const endRef = useRef<HTMLDivElement>(null);
@@ -57,18 +57,18 @@ const Chat: FC = () => {
             </div>
           )
         }
-        <input
-          type="text"
-          placeholder='Type a message...'
-          onChange={(e) => setText(e.target.value)}
-          value={text}
-        />
         <div className="emoji">
           <img src="/emoji.png" alt="emoji" onClick={() => setOpenEmoji(prev => !prev)} />
           <div className="picker">
             <EmojiPicker open={openEmoji} onEmojiClick={handleEmojiClick} />
           </div>
         </div>
+        <input
+          type="text"
+          placeholder='Type a message...'
+          onChange={(e) => setText(e.target.value)}
+          value={text}
+        />
         <button className='sendButton'>Send</button>
       </div>
     </div>

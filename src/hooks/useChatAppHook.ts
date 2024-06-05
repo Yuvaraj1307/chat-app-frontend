@@ -1,5 +1,6 @@
-import { ChatAppContext } from '@context';
 import { useContext } from 'react';
+import { TChatAppContext } from 'chat-app';
+import { ChatAppContext } from '@context';
 
 export const useChatAppHook = (): TChatAppContext => {
     

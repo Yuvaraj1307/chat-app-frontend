@@ -119,7 +119,7 @@
     }
 
     .bottom {
-        padding: 20px;
+        padding: 14px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -144,7 +144,7 @@
             border: none;
             outline: none;
             color: white;
-            padding: 20px;
+            padding: 16px;
             border-radius: 10px;
             font-size: 16px;
         }
@@ -166,6 +166,7 @@
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
+            /* height: 62px; */
         }
     }
 }
